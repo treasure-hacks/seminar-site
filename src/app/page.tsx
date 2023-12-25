@@ -25,25 +25,23 @@ export default function Home() {
   return (
     <>
       <style>{`
-        html { background-image: linear-gradient(#221238 0%, #50124A 100%); position: fixed; inset: 0; }
+        .bg { background-image: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,108,255,0.6) 100%); inset: 0; display: inline-block; object-fit: cover; width: 100%; }
         h1 { font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif; }
         h1 { position: fixed; bottom: 80%; text-align: center; width: 100%; font-weight: bold; font-size: 2em; padding: 0 32px; }
         h1 span { opacity: 0; top: 2em; transition: 0.5s; position: relative; }
         h1 span.vis { opacity: 1; top: 0; }
-        img.bg { position: fixed; inset: 0; object-fit: cover; pointer-events: none; height: 100%; width: 100%; }
-        img.hourglass { position: fixed; top: 50%; left: 50%; aspect-ratio: 700 / 979; transform: translate(-50%, -50%) rotate(var(--r)); transition: 0.35s; --r: 0; width: auto; height: 50%; }
-        .hourglass:hover { transform: translate(-50%, -50%) scale(0.98) rotate(var(--r)); opacity: 0.9; cursor: pointer; }
-        .hourglass:active { transform: translate(-50%, -50%) scale(0.8) rotate(var(--r)); opacity: 0.7; }
+        img.bg { position: relative; display: block; inset: 0; object-fit: cover; pointer-events: none; height: 100%; width: 100%; z-index: -1; }
       `}</style>
       <noscript>
         <style>{`h1[hidden] { display: block; }`}</style>
       </noscript>
 
-      <Script defer src="index.js"></Script>
+      {/* <Script defer src="index.js"></Script> */}
 
-      <h1 id="title" hidden>Treasure Hacks: Soft Skill Seminar</h1>
-      <Image id="hourglass" src="hourglass.png" alt="hourglass" className="hourglass" width="237" height="332"/>
-      <Image src="frame.png" alt="background" className="bg" width="1920" height="1100"/>
+      <div className="bg">
+        <Image src="UCSD.png" alt="background" className="bg" width="1920" height="1100"/>
+      </div>
+      
 
 
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24 hidden">
