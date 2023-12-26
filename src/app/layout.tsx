@@ -34,7 +34,7 @@ export default function RootLayout({
       <head>
         <meta name="color-scheme" content="dark" />
       </head>
-      <body className={lato.className}>{children}</body>
+      <body className={lato.className + ' text-white'}>{children}</body>
     </html>
   )
 }

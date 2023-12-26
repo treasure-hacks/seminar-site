@@ -9,7 +9,7 @@ export function PageHeader() {
     />
     <div className='absolute top-1/2 translate-y-[-50%] w-full z-[1]'>
       <h1 className='flex flex-col text-6xl gap-6 font-bold w-full items-center text-center whitespace-nowrap
-        max-sm:scale-75 max-[400px]:scale-[65%] text-white'>
+        max-sm:scale-75 max-[400px]:scale-[65%]'>
         <span className='z-[1] text-5xl'>
           Treasure Hacks
         </span>
