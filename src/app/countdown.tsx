@@ -19,7 +19,7 @@ function DigitDisplay(props: DigitDisplayProps) {
       flex justify-center items-center rounded-xl mb-1' suppressHydrationWarning> {/* Timestamps will be different */}
       {intermediate ? '' : props.value.toString().padStart(2, '0')}
     </div>
-    <span className='text-2xl font-bold'>{props.unit}</span>
+    <span className='text-2xl font-bold text-white'>{props.unit}</span>
   </div>
 }
 
