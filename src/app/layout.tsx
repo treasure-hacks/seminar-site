@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Lato } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const lato = Lato({ subsets: ['latin'], weight: ['100', '300', '400', '700', '900'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="bg-[#1e2630]">
+      <head>
+        <meta name="color-scheme" content="dark" />
+      </head>
+      <body className={lato.className}>{children}</body>
     </html>
   )
 }
