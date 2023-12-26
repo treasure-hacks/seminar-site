@@ -2,26 +2,6 @@ import Image from 'next/image'
 import Script from 'next/script'
 import { PageHeader } from './page-header'
 
-export const metadata = {
-  generator: 'Treasure Hacks Soft Skill Seminar',
-  title: 'Treasure Hacks: Soft Skill Seminar',
-  description: 'Our seminars teach skills like pitching and networking to high school and undergraduate students in a fun and relevant way. Through ' +
-    'hands-on activities and a feedback-driven pitch competition, we seek to help them find their voice and pursue their passions with confidence.',
-  applicationName: 'Treasure Hacks Soft Skill Seminar',
-  referrer: 'origin-when-cross-origin',
-  keywords: ['Treasure Hacks', 'Soft Skills', 'Seminar', 'Workshop', 'Presenting', 'Networking'],
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  icons: {
-    icon: 'https://treasurehacks.org/icons/android-chrome-512x512.png',
-    shortcut: 'https://treasurehacks.org/icons/favicon.ico',
-    apple: 'https://treasurehacks.org/icons/apple-touch-icon.png'
-  }
-}
-
 export default function Home() {
   return (
     <>
