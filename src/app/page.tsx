@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import Script from 'next/script'
+import { Lato } from 'next/font/google'
+
+const lato = Lato({ subsets: ["latin"], weight: "400" })
 
 export const metadata = {
   generator: 'Treasure Hacks Soft Skill Seminar',
@@ -27,19 +30,20 @@ export default function Home() {
       <style>{`
         .bg { background-image: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,108,255,0.6) 100%); inset: 0; display: inline-block; object-fit: cover; width: 100%; }
         h1 { font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif; }
-        h1 { position: fixed; bottom: 80%; text-align: center; width: 100%; font-weight: bold; font-size: 2em; padding: 0 32px; }
+        h1.title { position: absolute; bottom: 80%; text-align: center; width: 100%; font-weight: bold; font-size: 5em; padding: 0 32px; color: #FFF; font-family: ${lato.style.fontFamily}; }
+        h1.subtitle { position: absolute; bottom: 70%; text-align: center; width: 100%; font-weight: bold; font-size: 5em; padding: 0 32px; color: #FFF; font-family: ${lato.style.fontFamily}; }
         h1 span { opacity: 0; top: 2em; transition: 0.5s; position: relative; }
         h1 span.vis { opacity: 1; top: 0; }
         img.bg { position: relative; display: block; inset: 0; object-fit: cover; pointer-events: none; height: 100%; width: 100%; z-index: -1; }
       `}</style>
-      <noscript>
-        <style>{`h1[hidden] { display: block; }`}</style>
-      </noscript>
 
       {/* <Script defer src="index.js"></Script> */}
 
+
       <div className="bg">
         <Image src="UCSD.png" alt="background" className="bg" width="1920" height="1100"/>
+        <h1 className="title">Treasure Hacks</h1>
+        <h1 className="subtitle">Soft Skill Seminar</h1>
       </div>
       
 
