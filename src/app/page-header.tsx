@@ -1,24 +1,5 @@
 import Image from 'next/image'
-
-interface DigitDisplayProps {
-  unit: string
-}
-
-function DigitDisplay(props: DigitDisplayProps) {
-  return <div className='text-center'>
-    <div className='w-[100px] h-[112px] bg-gradient-to-b from-[#FFE259] to-[#FFA751] text-black text-[56px]
-      flex justify-center items-center rounded-xl mb-1'>
-      10
-    </div>
-    <span className='text-2xl font-bold'>{props.unit}</span>
-  </div>
-}
-
-function CountdownTimer() {
-  return <div className="flex relative justify-center gap-5 mt-12 max-[480px]:scale-[80%] max-[480px]:mt-4 max-[400px]:scale-[70%] max-[400px]:mt-0">
-    {['Days', 'Hours', 'Minutes', 'Seconds'].map(unit => <DigitDisplay key={unit} unit={unit}/>)}
-  </div>
-}
+import { CountdownTimer } from './countdown'
 
 export function PageHeader() {
   return <header className="bg-white relative after:content-[' '] after:absolute overflow-hidden
