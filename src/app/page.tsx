@@ -30,8 +30,8 @@ export default function Home() {
       <style>{`
         .bg { background-image: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,108,255,0.6) 100%); inset: 0; display: inline-block; object-fit: cover; width: 100%; }
         h1 { font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif; }
-        h1.title { position: absolute; bottom: 80%; text-align: center; width: 100%; font-weight: bold; font-size: 5em; padding: 0 32px; color: #FFF; font-family: ${lato.style.fontFamily}; }
-        h1.subtitle { position: absolute; bottom: 70%; text-align: center; width: 100%; font-weight: bold; font-size: 5em; padding: 0 32px; color: #FFF; font-family: ${lato.style.fontFamily}; }
+        h1.title { position: absolute; bottom: 65%; text-align: center; width: 100%; font-weight: bold; font-size: 5vw; padding: 0 32px; color: #FFF; font-family: ${lato.style.fontFamily}; }
+        h1.subtitle { position: absolute; bottom: 52%; text-align: center; width: 100%; font-weight: bold; font-size: 5vw; padding: 0 32px; color: #FFF; font-family: ${lato.style.fontFamily}; }
         h1 span { opacity: 0; top: 2em; transition: 0.5s; position: relative; }
         h1 span.vis { opacity: 1; top: 0; }
         img.bg { position: relative; display: block; inset: 0; object-fit: cover; pointer-events: none; height: 100%; width: 100%; z-index: -1; }
