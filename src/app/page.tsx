@@ -1,50 +1,14 @@
 import Image from 'next/image'
 import Script from 'next/script'
-
-export const metadata = {
-  generator: 'Treasure Hacks Soft Skill Seminar',
-  title: 'Treasure Hacks: Soft Skill Seminar',
-  description: 'Our seminars teach skills like pitching and networking to high school and undergraduate students in a fun and relevant way. Through ' +
-    'hands-on activities and a feedback-driven pitch competition, we seek to help them find their voice and pursue their passions with confidence.',
-  applicationName: 'Treasure Hacks Soft Skill Seminar',
-  referrer: 'origin-when-cross-origin',
-  keywords: ['Treasure Hacks', 'Soft Skills', 'Seminar', 'Workshop', 'Presenting', 'Networking'],
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  icons: {
-    icon: 'https://treasurehacks.org/icons/android-chrome-512x512.png',
-    shortcut: 'https://treasurehacks.org/icons/favicon.ico',
-    apple: 'https://treasurehacks.org/icons/apple-touch-icon.png'
-  }
-}
+import { PageHeader } from './page-header'
 
 export default function Home() {
   return (
     <>
-      <style>{`
-        html { background-image: linear-gradient(#221238 0%, #50124A 100%); position: fixed; inset: 0; }
-        h1 { font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif; }
-        h1 { position: fixed; bottom: 80%; text-align: center; width: 100%; font-weight: bold; font-size: 2em; padding: 0 32px; }
-        h1 span { opacity: 0; top: 2em; transition: 0.5s; position: relative; }
-        h1 span.vis { opacity: 1; top: 0; }
-        img.bg { position: fixed; inset: 0; object-fit: cover; pointer-events: none; height: 100%; width: 100%; }
-        img.hourglass { position: fixed; top: 50%; left: 50%; aspect-ratio: 700 / 979; transform: translate(-50%, -50%) rotate(var(--r)); transition: 0.35s; --r: 0; width: auto; height: 50%; }
-        .hourglass:hover { transform: translate(-50%, -50%) scale(0.98) rotate(var(--r)); opacity: 0.9; cursor: pointer; }
-        .hourglass:active { transform: translate(-50%, -50%) scale(0.8) rotate(var(--r)); opacity: 0.7; }
-      `}</style>
-      <noscript>
-        <style>{`h1[hidden] { display: block; }`}</style>
-      </noscript>
-
-      <Script defer src="index.js"></Script>
-
-      <h1 id="title" hidden>Treasure Hacks: Soft Skill Seminar</h1>
-      <Image id="hourglass" src="hourglass.png" alt="hourglass" className="hourglass" width="237" height="332"/>
-      <Image src="frame.png" alt="background" className="bg" width="1920" height="1100"/>
-
+      <PageHeader/>
+      <main className='bg-gradient-to-b from-[#3D66AB] to-[#1E2630]'>
+        
+      </main>
 
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24 hidden">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
