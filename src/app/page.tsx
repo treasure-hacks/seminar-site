@@ -36,16 +36,15 @@ export default function Home() {
         h1 span.vis { opacity: 1; top: 0; }
         img.bg { position: relative; display: block; inset: 0; object-fit: cover; pointer-events: none; height: 100%; width: 100%; z-index: -1; }
       `}</style>
+      <noscript>
+        <style>{`h1[hidden] { display: block; }`}</style>
+      </noscript>
 
-      {/* <Script defer src="index.js"></Script> */}
+      <Script defer src="index.js"></Script>
 
-
-      <div className="bg">
-        <Image src="UCSD.png" alt="background" className="bg" width="1920" height="1100"/>
-        <h1 className="title">Treasure Hacks</h1>
-        <h1 className="subtitle">Soft Skill Seminar</h1>
-      </div>
-      
+      <h1 id="title" hidden>Treasure Hacks: Soft Skill Seminar</h1>
+      <Image id="hourglass" src="hourglass.png" alt="hourglass" className="hourglass" width="237" height="332"/>
+      <Image src="frame.png" alt="background" className="bg" width="1920" height="1100"/>
 
 
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24 hidden">
