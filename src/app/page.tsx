@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Script from 'next/script'
 import { PageHeader } from './page-header'
 import { Raffle } from './raffle'
+import { InfoSection } from './info-section'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <PageHeader/>
       <main className='bg-gradient-to-b from-[#3D66AB] to-[#1E2630]'>
         <Raffle/>
+        <InfoSection/>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </main>
 
