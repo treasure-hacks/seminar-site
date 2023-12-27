@@ -4,6 +4,7 @@ import { PageHeader } from './page-header'
 import { Raffle } from './raffle'
 import { InfoSection } from './info-section'
 import { EventDescription } from './event-description-section'
+import { JudgesSection } from './judges-section'
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         <Raffle/>
         <InfoSection/>
         <EventDescription/>
+        {/* Other Sections Go Here */}
+        <JudgesSection/>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </main>
 
