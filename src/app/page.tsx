@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { PageHeader } from './page-header'
 import { Raffle } from './raffle'
 import { InfoSection } from './info-section'
+import { EventDescription } from './event-description-section'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main className='bg-gradient-to-b from-[#3D66AB] to-[#1E2630]'>
         <Raffle/>
         <InfoSection/>
+        <EventDescription/>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </main>
 
