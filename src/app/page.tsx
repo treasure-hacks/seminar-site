@@ -9,6 +9,7 @@ export default function Home() {
       <PageHeader/>
       <main className='bg-gradient-to-b from-[#3D66AB] to-[#1E2630]'>
         <Raffle/>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </main>
 
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24 hidden">
