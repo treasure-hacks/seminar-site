@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 export function Raffle() {
-  return <div className='min-h-[40vh] max-h-[600px] px-14 py-10 flex max-[400px]:flex-col relative justify-center items-center gap-5 max-sm:px-10'>
+  return <div className='min-h-[35vh] max-h-[600px] px-14 pt-12 pb-4 flex max-[400px]:flex-col relative justify-center items-center gap-5 max-sm:px-10'>
     <p className='relative leading-[1.35] flex-col text-3xl gap-6 w-full max-w-[440px] text-right py-[2%] z-[1]'>
       First 50 birds to sign up will be <span
         className='relative inline-block min-[730px]:before:bg-[url("/red-spark.png")] min-[730px]:before:inline-block min-[730px]:before:absolute

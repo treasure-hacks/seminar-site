@@ -4,7 +4,7 @@ const EVENT_DESCRIPTION = 'Level up your career game and pick up essential skill
 
 
 export function EventDescription() {
-  return <div className='flex flex-row-reverse gap-12 px-14 py-10 max-w-[1100px] mx-auto
+  return <div className='flex flex-row-reverse gap-12 px-14 py-12 max-w-[1100px] mx-auto
     max-md:flex-col max-md:max-w-[560px] max-[1100px]:gap-8 max-sm:px-10'>
     <div>
       <h2 className='text-4xl mb-4'>The Seminar</h2>
