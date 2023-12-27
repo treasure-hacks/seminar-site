@@ -1,12 +1,14 @@
 import Image from 'next/image'
 
 export function Raffle() {
-  return <div className='flex max-[400px]:flex-wrap relative justify-center gap-5 max-[480px]:scale-[80%] max-[480px]:mt-4 max-[400px]:scale-[70%] max-[400px]:mt-0 px-[15%]'>
-    <p className='relative flex-col text-6xl gap-6 w-full text-right py-[2%] max-sm:scale-60 max-[400px]:scale-[80%]
-      max-[480px]:before:hidden before:bg-[url("/red-spark.png")] before:inline-block before:size-20 before:bg-contain
-      before:bg-no-repeat before:bg-center before:absolute before:top-[115px] before:left-[-10px]'>
-      First 50 birds to sign up will be entered in a raffle for a chance to win a new pair of HyperX headphones!
+  return <div className='min-h-[40vh] max-h-[600px] px-14 py-10 flex max-[400px]:flex-col relative justify-center items-center gap-5'>
+    <p className='relative leading-[1.35] flex-col text-3xl gap-6 w-full max-w-[440px] text-right py-[2%] z-[1]'>
+      First 50 birds to sign up will be <span
+        className='relative inline-block min-[730px]:before:bg-[url("/red-spark.png")] min-[730px]:before:inline-block min-[730px]:before:absolute
+        min-[730px]:before:size-8 min-[730px]:before:bg-no-repeat min-[730px]:before:bg-cover min-[730px]:before:bottom-[-20px] min-[730px]:before:left-[-32px]'
+      >entered</span> in a raffle for a chance to win a new pair of HyperX headphones!
     </p>
-    <Image width="400" height="400" src='/headphones.png' alt="Headphones"/>
+    <Image width="200" height="200" src='/headphones.png' alt="Headphones"
+      className='max-[690px]:absolute max-[690px]:left-[calc(25%-13vw)] max-[690px]:bottom-[26px] max-[690px]:opacity-20'/>
 </div>
 }
