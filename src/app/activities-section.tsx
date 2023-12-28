@@ -7,7 +7,7 @@ const ACTIVITIES = [
 ]
 
 export function ActivitiesSection() {
-  return <div className='py-10 px-14 max-sm:px-4 min-h-[50vh] flex flex-col justify-center'>
+  return <div className='py-10 px-14 max-sm:px-4 min-h-[45vh] flex flex-col justify-center'>
     <h2 className='text-4xl mt-8 mb-8 text-center'>Gamified Learning</h2>
     <div className='flex flex-wrap justify-center gap-12 my-8'>
       {ACTIVITIES.map(a => <div key={a.icon} className='flex gap-4 items-center my-2'>

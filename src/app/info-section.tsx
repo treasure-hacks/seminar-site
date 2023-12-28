@@ -23,7 +23,7 @@ function InfoItem({ icon, text }: InfoItemProps) {
 }
 
 export function InfoSection() {
-  return <div className='flex gap-6 mx-auto w-fit px-14 py-10
+  return <div className='flex gap-6 mx-auto w-fit px-14 py-10 min-h-[35vh] items-center
     max-[830px]:flex-col max-[830px]:gap-8 max-sm:px-8'>
     {eventInfo.map(item => <InfoItem key={item.key} text={item.text} icon={item.icon} />)}
   </div>
