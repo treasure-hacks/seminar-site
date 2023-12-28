@@ -14,7 +14,7 @@ interface DigitDisplayProps {
 
 function DigitDisplay(props: DigitDisplayProps) {
   const intermediate = !props.state.endsWith('-ready')
-  return <div className='text-center' data-time={props.time}>
+  return <div className='text-center' data-time={props.time} suppressHydrationWarning>
     <div className='w-[100px] h-[112px] bg-gradient-to-b from-[#FFE259] to-[#FFA751] text-black text-[56px]
       flex justify-center items-center rounded-xl mb-1' suppressHydrationWarning> {/* Timestamps will be different */}
       {intermediate ? '' : props.value.toString().padStart(2, '0')}
@@ -37,10 +37,11 @@ export function CountdownTimer() {
   updateTimes(unitsLeft);
 
   const [lastUpdate, setLastUpdate] = useState(Date.now());
-  setTimeout(() => setLastUpdate(Date.now()), rendered ? 1000 : 0);
   const key = 'countdown' + (rendered ? '-ready' : '')
   
-  useEffect(() => {}, [lastUpdate]);
+  useEffect(() => {
+    setTimeout(() => setLastUpdate(Date.now()), rendered ? 1000 : 0);
+  }, [lastUpdate]);
   rendered = true;
 
   return <div key={key} className='flex relative justify-center gap-5 mt-12 max-[480px]:scale-[80%] max-[480px]:mt-4 max-[400px]:scale-[70%] max-[400px]:mt-0'>
