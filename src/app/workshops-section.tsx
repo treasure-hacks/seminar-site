@@ -64,7 +64,7 @@ function WorkshopCard({ data }: { data: Workshop }) {
     {data.sections.map((s, index) => {
       const imgSrc = s.image ? `/images/people/${s.image}` : '/images/speaker-placeholder.png'
       return <div key={data.name + ' ' + index} className='flex items-center gap-6 mt-6 mb-2 max-[550px]:gap-3 w-fit mx-auto'>
-        <Image src={imgSrc} alt="" width="96" height="96" className='bg-white rounded-full
+        <Image src={imgSrc} alt={s.speaker} width="96" height="96" className='bg-white rounded-full
           max-[550px]:w-[72px] max-[550px]:h-[72px]'
         />
         <div className='text-lg w-[260px] flex-shrink-0 max-[550px]:text-[17px] max-[550px]:w-[250px]'>
