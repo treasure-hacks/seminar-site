@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Script from 'next/script'
 import { PageHeader } from './page-header'
-import { Raffle } from './raffle'
+import { RaffleSection } from './raffle-section'
 import { InfoSection } from './info-section'
 import { EventDescription } from './event-description-section'
 import { JudgesSection } from './judges-section'
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <PageHeader/>
       <main className='bg-gradient-to-b from-[#3D66AB] to-[#1E2630]'>
-        <Raffle/>
+        <RaffleSection/>
         <InfoSection/>
         <EventDescription/>
         {/* Other Sections Go Here */}
