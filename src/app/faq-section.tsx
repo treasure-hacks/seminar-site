@@ -24,7 +24,7 @@ const FAQs = [
   },
   {
     question: 'How do I register?',
-    answer: <>All you need to do is sign up on our <a>registration form</a>!</>
+    answer: <>All you need to do is sign up on our <a target='_blank' href='/register/' className='underline'>registration form</a>!</>
   },
   {
     question: 'Do I need experience with presenting, networking, etc?',
@@ -42,7 +42,7 @@ export function FAQSection() {
   const [forceOpen] = useState(true)
   useEffect(() => {
     const faqList = document.getElementById('faq-list') as HTMLElement
-    faqList.querySelectorAll('details').forEach(el => el.addEventListener('click', (e: Event) => e.preventDefault()))
+    faqList.querySelectorAll('details summary').forEach(el => el.addEventListener('click', (e: Event) => e.preventDefault()))
   }, [])
 
   return <>
