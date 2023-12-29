@@ -61,7 +61,8 @@ export function FAQSection() {
           triggerElementProps={{
             id: 'faq-trigger-' + i,
             className: 'flex items-center relative list-none py-2 pl-4 pr-12 after:content-["+"] after:absolute ' +
-              'after:right-4 after:text-3xl [&[aria-expanded="true"]]:after:content-["\u2212"] font-bold'
+              'after:right-4 after:text-3xl [&[aria-expanded="true"]]:after:content-["\u2212"] font-bold marker:hidden ' +
+              'marker:appearance-none [&::-webkit-details-marker]:hidden'
           }}
           transitionTime={250}
         >
