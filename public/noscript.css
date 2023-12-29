@@ -1,4 +1,17 @@
-/* Summary */
+/* Header */
+.countdown { display: none; }
+@media (min-width: 1000px) {
+  header > div { --tw-scale-x: 1.2; --tw-scale-y: 1.2; }
+}
+
+/* Splide */
+.splide { visibility: visible; }
+.splide .splide__slide { opacity: 1; }
+.splide .splide__track { width: 100%; }
+.splide .splide__list {
+  flex-wrap: wrap;
+}
+
+/* Accordion Items */
 details[open] summary + div { height: auto!important; }
 details[open] summary::after { content: '−'; }
-

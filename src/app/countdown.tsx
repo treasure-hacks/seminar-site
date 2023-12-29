@@ -44,7 +44,8 @@ export function CountdownTimer() {
     rendered = true;
   }, [lastUpdate]);
 
-  return <div key={key} className='flex relative justify-center gap-5 mt-12 max-[480px]:scale-[80%] max-[480px]:mt-4 max-[400px]:scale-[70%] max-[400px]:mt-0'>
+  return <div key={key} className='countdown flex relative justify-center gap-5 mt-12 max-[480px]:scale-[80%] max-[480px]:mt-4
+    max-[400px]:scale-[70%] max-[400px]:mt-0'>
     {UNITS.map(unit => <DigitDisplay key={unit} state={key} value={unitsLeft[unit]} unit={unit} time={lastUpdate}/>)}
   </div>
 }
