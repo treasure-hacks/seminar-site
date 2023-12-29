@@ -4,7 +4,7 @@ import { CountdownTimer } from './countdown'
 export function PageHeader() {
   return <header className="bg-white relative after:content-[' '] after:absolute overflow-hidden
     after:inset-0 after:bg-gradient-to-b after:from-[#0009] after:to-[#0059D199]">
-    <Image src="/geisel-library.png" alt="Geisel Library" width="1920" height="1080"
+    <Image src="/images/geisel-library.webp" alt="Geisel Library" width="1920" height="1080" priority={true}
       className='object-cover object-center w-full min-h-[540px] max-h-screen opacity-75'
     />
     <div className='absolute top-1/2 translate-y-[-50%] w-full z-[1]'>
