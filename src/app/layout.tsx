@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: 'https://treasurehacks.org/icons/android-chrome-512x512.png',
-    shortcut: 'https://treasurehacks.org/icons/favicon.ico',
-    apple: 'https://treasurehacks.org/icons/apple-touch-icon.png'
+    icon: '/icons/android-chrome-512x512.png',
+    shortcut: '/icons/favicon.ico',
+    apple: '/icons/apple-touch-icon.png'
   }
 }
 
