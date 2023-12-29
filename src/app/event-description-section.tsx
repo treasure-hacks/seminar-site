@@ -6,7 +6,7 @@ const EVENT_DESCRIPTION = 'Level up your career game and pick up essential skill
 export function EventDescription() {
   return <div className='flex flex-row-reverse gap-12 px-14 py-12 max-w-[1100px] mx-auto
     max-md:flex-col max-md:max-w-[560px] max-[1100px]:gap-8 max-sm:px-10'>
-    <div>
+    <div className='flex flex-col justify-center'>
       <h2 className='text-4xl mb-4'>The Seminar</h2>
       <p className='text-lg'>{EVENT_DESCRIPTION}</p>
         <a target="_blank" href="/register/" className='group relative w-fit mt-6 mx-auto block px-5 py-2.5 bg-gradient-to-r from-[#FFE259] to-[#FFA751] rounded-full
@@ -19,7 +19,7 @@ export function EventDescription() {
       before:block before:bg-[url("/images/seminar-bird.png")] before:size-24 before:bg-center before:bg-no-repeat
       before:bg-cover before:absolute before:bottom-[-28px] before:left-[-32px]
     '>
-      <Image src="/geisel-library.png" width="400" height="200" alt="Placeholder image"
+      <Image src="https://treasurehacks.org/images/photos/collaboration-overhead.webp" width="400" height="289" alt="Placeholder image"
         className='object-cover max-w-[400px] w-full h-full rounded-lg'
       />
     </div>
