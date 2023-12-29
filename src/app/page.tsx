@@ -7,6 +7,7 @@ import { EventDescription } from './event-description-section'
 import { ActivitiesSection } from './activities-section'
 import { WorkshopsSection } from './workshops-section'
 import { JudgesSection } from './judges-section'
+import { FAQSection } from './faq-section'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <ActivitiesSection/>
         <WorkshopsSection/>
         <JudgesSection/>
+        <FAQSection/>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </main>
 
