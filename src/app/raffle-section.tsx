@@ -8,7 +8,7 @@ export function RaffleSection() {
         min-[730px]:before:size-8 min-[730px]:before:bg-no-repeat min-[730px]:before:bg-cover min-[730px]:before:bottom-[-20px] min-[730px]:before:left-[-32px]'
       >entered</span> in a raffle for a chance to win a new pair of HyperX headphones!
     </p>
-    <Image width="200" height="200" src='/headphones.png' alt="Headphones"
+    <Image width="200" height="200" src='/images/headphones.webp' alt="Headphones"
       className='max-[690px]:absolute max-[690px]:left-[calc(25%-13vw)] max-[690px]:bottom-[26px] max-[690px]:opacity-20'/>
 </div>
 }
