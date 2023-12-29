@@ -41,8 +41,8 @@ export function CountdownTimer() {
   
   useEffect(() => {
     setTimeout(() => setLastUpdate(Date.now()), rendered ? 1000 : 0);
+    rendered = true;
   }, [lastUpdate]);
-  rendered = true;
 
   return <div key={key} className='flex relative justify-center gap-5 mt-12 max-[480px]:scale-[80%] max-[480px]:mt-4 max-[400px]:scale-[70%] max-[400px]:mt-0'>
     {UNITS.map(unit => <DigitDisplay key={unit} state={key} value={unitsLeft[unit]} unit={unit} time={lastUpdate}/>)}
