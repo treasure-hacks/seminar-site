@@ -8,6 +8,7 @@ import { ActivitiesSection } from './activities-section'
 import { WorkshopsSection } from './workshops-section'
 import { JudgesSection } from './judges-section'
 import { FAQSection } from './faq-section'
+import { PageFooter } from './footer'
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
         <WorkshopsSection/>
         <JudgesSection/>
         <FAQSection/>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <PageFooter/>
       </main>
 
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24 hidden">
