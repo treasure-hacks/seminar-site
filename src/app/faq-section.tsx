@@ -39,16 +39,19 @@ const FAQs = [
 ]
 
 export function FAQSection() {
-  const [forceOpen] = useState(true)
+  const [forceOpen, setOpen] = useState(false)
   useEffect(() => {
     const faqList = document.getElementById('faq-list') as HTMLElement
-    faqList.querySelectorAll('details summary').forEach(el => el.addEventListener('click', (e: Event) => e.preventDefault()))
+    faqList.querySelectorAll('details summary').forEach(el => {
+      setOpen(true)
+      el.addEventListener('click', (e: Event) => e.preventDefault())
+    })
   }, [])
 
   return <>
     <h2 className='text-4xl text-center mt-8 mb-4'>Frequently Asked Questions</h2>
-    <div id='faq-list' className='py-10 px-14 max-sm:px-8 flex flex-col w-fit mx-auto'>
-      {FAQs.map((faq, i) => <div key={'faq-' + i} className='last:border-b-0 border-b-[1px] border-b-gray-700 max-w-[1000px]'>
+    <div id='faq-list' className='py-10 px-14 max-sm:px-8 flex flex-col w-full items-center'>
+      {FAQs.map((faq, i) => <div key={'faq-' + i} className='last:border-b-0 border-b-[1px] border-b-gray-700 max-w-[1000px] w-full'>
         <Collapsible trigger={faq.question}
           contentContainerTagName='details'
           triggerTagName='summary'

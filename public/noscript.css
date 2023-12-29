@@ -1,0 +1,4 @@
+/* Summary */
+details[open] summary + div { height: auto!important; }
+details[open] summary::after { content: '−'; }
+
