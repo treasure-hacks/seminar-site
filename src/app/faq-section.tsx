@@ -56,16 +56,16 @@ export function FAQSection() {
           easing='ease-in-out'
           containerElementProps={{
             open: forceOpen,
-            className: 'bg-[#0006] px-8 py-4 text-xl max-[480px]:text-lg max-[480px]:px-6'
+            className: 'bg-[#0006] px-4 py-2 text-xl max-[480px]:text-lg max-[480px]:px-2'
           }}
           triggerElementProps={{
             id: 'faq-trigger-' + i,
-            className: 'flex items-center relative list-none pr-8 after:content-["+"] after:absolute ' +
-              'after:right-0 after:text-3xl [&[aria-expanded="true"]]:after:content-["\u2212"] font-bold'
+            className: 'flex items-center relative list-none py-2 pl-4 pr-12 after:content-["+"] after:absolute ' +
+              'after:right-4 after:text-3xl [&[aria-expanded="true"]]:after:content-["\u2212"] font-bold'
           }}
           transitionTime={250}
         >
-          <div className='pt-4 pb-1'>{faq.answer}</div>
+          <div className='px-4 pt-2 pb-3'>{faq.answer}</div>
         </Collapsible>
       </div>)}
     </div>
