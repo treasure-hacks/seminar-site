@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="bg-[#1e2630]">
+    <html lang="en" className="bg-[#1e2630] selection:bg-[#b4d5fe66]">
       <head>
         <meta name="color-scheme" content="dark" />
         {/* eslint-disable @next/next/no-css-tags */}
