@@ -9,6 +9,7 @@ import { WorkshopsSection } from './workshops-section'
 import { JudgesSection } from './judges-section'
 import { FAQSection } from './faq-section'
 import { PageFooter } from './footer'
+import './index'
 
 export default function Home() {
   return (
