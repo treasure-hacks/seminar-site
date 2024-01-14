@@ -7,6 +7,7 @@ import { EventDescription } from './event-description-section'
 import { ActivitiesSection } from './activities-section'
 import { WorkshopsSection } from './workshops-section'
 import { JudgesSection } from './judges-section'
+import { ScheduleSection } from './schedule-section'
 import { FAQSection } from './faq-section'
 import { PageFooter } from './footer'
 
@@ -20,6 +21,7 @@ export default function Home() {
         <EventDescription/>
         <ActivitiesSection/>
         <WorkshopsSection/>
+        <ScheduleSection/>
         <JudgesSection/>
         <FAQSection/>
 
