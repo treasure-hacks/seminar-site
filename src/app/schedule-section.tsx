@@ -55,64 +55,31 @@ const schedule=[
 export function ScheduleSection(){
 
     return (
-        <div id="schedule" className="delimitationred xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex lg:flex-row flex-col items-center   lg:justify-between lg:items-center">
+        <div id="schedule" className="delimitationred xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex flex-col items-center lg:justify-between lg:items-center">
             {schedule.map((element, index) => <Leaf key={element.title} title={element.title} time={element.time} duration={element.duration} description={element.description} index={index}/>)}
         </div>
     );
 }
 
-/*
-export function TimeTree(){
-
-    const leafs=schedule.map((element,index)=>{
-        return (
-            <Fragment key={element.title}> {}
-                <Leaf keyName={element.title} title={element.title} time={element.time} description={element.description} duration={element.duration} index={index} />
-            </Fragment>
-        )
-    });
-
-    /*
-    return (
-        <ul className="delimitationgreen   md:w-[600px] w-[500px] max-w-[90%]">
-
-            <LayoutLeaf keyName="topSpace" height="50px"/>
-
-            {leafs}
-
-            <LayoutLeaf keyName="bottomSpace" height="50px"/>
-        </ul>
-    );
-    */
-//}
-
 export function Leaf(props: {key: string, title: string, time: string,  duration: string, description: string, index: number}){
-
-    const textAlign=(props.index%2)==0?" text-right ": " text-left ";
-    const flexAlign=(props.index%2)==0?" flex-row ": " flex-row-reverse ";
-    const descriptionDefinedBorder=(props.index%2)==0?" border-r-8 ": " border-l-8 ";
-    const timeDefinedBorder=(props.index%2)==0?" border-l-8 ": " border-r-8 ";
-    
-
     return (
         <>
-            <li  key={props.key+"topspace"} className={"delimitationpurple flex  w-full text-white "+flexAlign}>
-                <div className={"delimitationblue w-[50%] flex border-white"+flexAlign+descriptionDefinedBorder}>
+            <li  key={props.key+"topspace"} className={"flex  w-full text-white flex-row-reverse"}>
+                <div className={"w-[50%] flex border-white-16 flex-row-reverse border-l-8"}>
 
-                    <div className={"delimitationyellow font-normal w-[80%]"+textAlign}>
+                    <div className={"font-normal w-[80%] text-left"}>
                         <p className="font-normal mb-[2%]">{props.duration}</p>
                         <p className="text-[16px] mb-[2%]">{props.title}</p>
-                        <p className="font-normal  ">{props.description}</p>
+                        <p className="font-normal">{props.description}</p>
                     </div>
-
-                    <div className={"delimitationred flex flex-row items-center flex-1 justify-end"+flexAlign}>
-                        <div className="delimitationblue w-[30%] aspect-square rounded-full bg-white "></div>
-                        <div className="delimitationyellow w-[50%] border border-solid border-t-8 border-white"></div>
-                    </div>
-
                 </div>
 
-                <div className={"delimitationgreen  px-[6%] flex flex-col justify-center border-white"+timeDefinedBorder}>
+                <div className={"flex flex-row items-center flex-1 justify-end"}>
+                    <div className="w-[10%] aspect-square rounded-full bg-white "></div>
+                    <div className="w-[20%] border border-solid border-t-8 border-white"></div>
+                </div>
+
+                <div className={"px-[6%] flex flex-col justify-center"}>
 
                     <p className="text-[20px]">{props.time}</p>
 
@@ -127,9 +94,9 @@ export function LayoutLeaf(props: {keyName: string, height: string}){
 
     const height=" h-["+props.height+"] ";
     return (
-        <li  key={props.keyName} className={"delimitationpurple flex  w-full "+height}>
-                <div className="w-[50%] h-full  border-white border-r-8"></div>
-                <div className="w-[50%] h-full   border-white border-l-8"></div>
+        <li  key={props.keyName} className={"flex  w-full "+height}>
+                <div className="w-[50%] h-full border-white border-r-8"></div>
+                <div className="w-[50%] h-full border-white border-l-8"></div>
         </li>
     );
 }
