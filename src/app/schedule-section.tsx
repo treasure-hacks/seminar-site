@@ -2,52 +2,52 @@ import Image from "next/image"
 
 const schedule=[
     {
-        title:"Kickoff Meeting",
-        time:"9:30 AM",
-        duration:"15 min",
-        description:"Here, we will go over details like timing, presentation requirements, and general advice."
-    },
-    {
-        title:"Team Building",
-        time:"9:45 AM",
-        duration:"15 min",
-        description:"In groups of 10 students, 5 nonprofits, and 5 for-profits, you will network and form your team."
-    },
-    {
-        title:"Building Period 1",
+        title:"Opening Ceremony",
         time:"10:00 AM",
-        duration:"1 hr, 15 min",
-        description:"This is the first block of time you will have to develop your framework and pitch"
+        duration:"20 min",
+        description:"Check in starting at 9:00 AM"
+    },
+    {
+        title:"Networking",
+        time:"10:20 AM",
+        duration:"75 min",
+        description:"Learn and practice the whole shabang of networking!"
     },
     {
         title:"Lunch",
-        time:"11:15 AM",
+        time:"11:35 AM",
         duration:"30 min",
-        description:"Lunch break!"
+        description:"Eat food - pizza."
     },
     {
-        title:"Building Period 2",
-        time:"11:45 AM",
-        duration:"1 hr, 15 min",
-        description:"This is the second block of time you will have to develop your framework and pitch"
+        title:"Presenting",
+        time:"12:10 PM",
+        duration:"75 min",
+        description:"Learn to deliver gnarly presentations"
     },
     {
-        title:"Presentations",
-        time:"1:00 PM",
-        duration:"40 min",
-        description:"Teams are split into two brackets, where the best one from each group presents again in front of everyone"
+        title:"Pitch Competition",
+        time:"1:35 PM",
+        duration:"150 min",
+        description:"Pitch to judges, get the prizes"
     },
     {
-        title:"Additional Judging Time",
-        time:"1:40 PM",
-        duration:"10 min",
+        title:"Dinner",
+        time:"4:10 PM",
+        duration:"30 min",
+        description:"Get filled with Chick Fil A"
+    },
+    {
+        title:"Financial Literacy",
+        time:"4:45 PM",
+        duration:"30 min",
         description:"Judges finish scoring projects, add any last comments, and decide the top team"
     },
     {
         title:"Closing Ceremony",
-        time:"1:50 PM",
-        duration:"10 min",
-        description:"The winners will be announced, and takeaways from the event will be presented!"
+        time:"5:20 PM",
+        duration:"30 min",
+        description:"Wind down, winners announced, and reflecting on the fun-filled day"
     },
     
 ];
@@ -72,21 +72,21 @@ export function Leaf(props: {keyName: string, title: string, time: string,  dura
                             <Image src="clock.png" width="24" height="24" alt="clock"></Image>
                             <p className="font-medium">{props.duration}</p>
                         </div>
-                        <p className="text-[24px] mb-[2%] font-bold">{props.title}</p>
+                        <p className="text-[32px] my-[1%] font-bold">{props.title}</p>
                         <p className="text-[16px] font-normal">{props.description}</p>
                     </div>
                 </div>
 
                 <div className={"flex flex-row items-center flex-1 justify-end"}>
-                    <div className="w-[10%] aspect-square rounded-full bg-white relative left-2"></div>
+                    <div className="w-[7%] aspect-square rounded-full bg-white relative left-2"></div>
                     <div className="w-[20%] border border-solid border-t-8 border-white"></div>
                 </div>
 
-                <div className={"px-[6%] flex flex-col justify-center"}>
-                    <p className="text-[32px] font-bold">{props.time}</p>
+                <div className={"px-[6%] flex flex-col justify-center align-right"}>
+                    <p className="text-[32px] font-semibold">{props.time}</p>
                 </div>
             </li>
-            <LayoutLeaf keyName={props.keyName+"bottomspace"} height="20px"/>
+            <LayoutLeaf keyName={props.keyName+"bottomspace"} height="30px"/>
         </>
     );
 }
