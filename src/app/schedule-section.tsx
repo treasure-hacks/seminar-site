@@ -56,15 +56,15 @@ export function ScheduleSection(){
 
     return (
         <div id="schedule" className="delimitationred xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex flex-col items-center lg:justify-between lg:items-center">
-            {schedule.map((element, index) => <Leaf key={element.title} title={element.title} time={element.time} duration={element.duration} description={element.description} index={index}/>)}
+            {schedule.map((element, index) => <Leaf key={element.title} keyName={element.title} title={element.title} time={element.time} duration={element.duration} description={element.description} index={index}/>)}
         </div>
     );
 }
 
-export function Leaf(props: {key: string, title: string, time: string,  duration: string, description: string, index: number}){
+export function Leaf(props: {keyName: string, title: string, time: string,  duration: string, description: string, index: number}){
     return (
         <>
-            <li  key={props.key+"topspace"} className={"flex  w-full text-white flex-row-reverse"}>
+            <li  key={props.keyName+"topspace"} className={"flex  w-full text-white flex-row-reverse"}>
                 <div className={"w-[50%] flex border-white-16 flex-row-reverse border-l-8"}>
 
                     <div className={"flex flex-col font-normal w-[80%] text-left content-center"}>
@@ -86,16 +86,16 @@ export function Leaf(props: {key: string, title: string, time: string,  duration
                     <p className="text-[32px] font-bold">{props.time}</p>
                 </div>
             </li>
-            <LayoutLeaf key={props.key+"bottomspace"} height="20px"/>
+            <LayoutLeaf keyName={props.keyName+"bottomspace"} height="20px"/>
         </>
     );
 }
 
-export function LayoutLeaf(props: {key: string, height: string}){
+export function LayoutLeaf(props: {keyName: string, height: string}){
 
     const height=" h-["+props.height+"] ";
     return (
-        <li  key={props.key} className={"flex  w-full "+height}>
+        <li  key={props.keyName} className={"flex  w-full "+height}>
                 <div className="w-[50%] h-full border-white border-r-8"></div>
                 <div className="w-[50%] h-full border-white border-l-8"></div>
         </li>
