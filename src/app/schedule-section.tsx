@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import Image from "next/image"
 
 const schedule=[
     {
@@ -67,34 +67,35 @@ export function Leaf(props: {key: string, title: string, time: string,  duration
             <li  key={props.key+"topspace"} className={"flex  w-full text-white flex-row-reverse"}>
                 <div className={"w-[50%] flex border-white-16 flex-row-reverse border-l-8"}>
 
-                    <div className={"font-normal w-[80%] text-left"}>
-                        <p className="font-normal mb-[2%]">{props.duration}</p>
-                        <p className="text-[16px] mb-[2%]">{props.title}</p>
-                        <p className="font-normal">{props.description}</p>
+                    <div className={"flex flex-col font-normal w-[80%] text-left content-center"}>
+                        <div className="flex flex-row">
+                            <Image src="clock.png" width="24" height="24" alt="clock"></Image>
+                            <p className="font-medium">{props.duration}</p>
+                        </div>
+                        <p className="text-[24px] mb-[2%] font-bold">{props.title}</p>
+                        <p className="text-[16px] font-normal">{props.description}</p>
                     </div>
                 </div>
 
                 <div className={"flex flex-row items-center flex-1 justify-end"}>
-                    <div className="w-[10%] aspect-square rounded-full bg-white "></div>
+                    <div className="w-[10%] aspect-square rounded-full bg-white relative left-2"></div>
                     <div className="w-[20%] border border-solid border-t-8 border-white"></div>
                 </div>
 
                 <div className={"px-[6%] flex flex-col justify-center"}>
-
-                    <p className="text-[20px]">{props.time}</p>
-
+                    <p className="text-[32px] font-bold">{props.time}</p>
                 </div>
             </li>
-            <LayoutLeaf keyName={props.key+"bottomspace"} height="20px"/>
+            <LayoutLeaf key={props.key+"bottomspace"} height="20px"/>
         </>
     );
 }
 
-export function LayoutLeaf(props: {keyName: string, height: string}){
+export function LayoutLeaf(props: {key: string, height: string}){
 
     const height=" h-["+props.height+"] ";
     return (
-        <li  key={props.keyName} className={"flex  w-full "+height}>
+        <li  key={props.key} className={"flex  w-full "+height}>
                 <div className="w-[50%] h-full border-white border-r-8"></div>
                 <div className="w-[50%] h-full border-white border-l-8"></div>
         </li>
