@@ -73,7 +73,7 @@ function Leaf({ title, time, duration, description }: EventItemProps){
     return (
         <>
             <li  key={title} className="flex w-full text-white flex-row-reverse">
-                <div className={"w-[50%] flex border-white-16 flex-row border-l-8 px-[2%] py-[1%]"}>
+                <div className={"w-[50%] flex border-white-16 flex-row border-l-8 px-[2%] py-5"}>
                     <div className={"flex flex-col font-normal w-[80%] text-left content-center"}>
                         <div className="flex flex-row">
                             <Image src="clock.png" width="24" height="24" alt="clock"></Image>
