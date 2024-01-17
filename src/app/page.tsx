@@ -8,6 +8,7 @@ import { ActivitiesSection } from './activities-section'
 import { WorkshopsSection } from './workshops-section'
 import { JudgesSection } from './judges-section'
 import { FAQSection } from './faq-section'
+import { QuoteSection } from './quote-section'
 import { PageFooter } from './footer'
 import './index'
 
@@ -23,6 +24,7 @@ export default function Home() {
         <WorkshopsSection/>
         <JudgesSection/>
         <FAQSection/>
+        <QuoteSection/>
 
         <PageFooter/>
       </main>
