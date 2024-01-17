@@ -18,7 +18,7 @@ const WORKSHOPS: Workshop[] = [
     name: 'Presenting',
     sections: [
       {
-        title: 'Bringing Yourself', speaker: 'Brant Cooper',
+        title: 'Moving Your Audience', speaker: 'Brant Cooper',
         speakerTitle: 'Co-Founder of Startup San Diego', image: 'brant-cooper.webp'
       },
       {
@@ -31,7 +31,7 @@ const WORKSHOPS: Workshop[] = [
     name: 'Networking',
     sections: [
       {
-        title: 'Overcome Networking Fear', speaker: 'DeLinda Forsythe',
+        title: 'Your Network = Your Net Worth', speaker: 'DeLinda Forsythe',
         speakerTitle: 'former CEO of ICE', image: 'delinda-forsythe.webp'
       },
       {
@@ -44,8 +44,8 @@ const WORKSHOPS: Workshop[] = [
     name: 'Financial Literacy',
     sections: [
       {
-        title: 'TBD', speaker: 'Sam Liu',
-        speakerTitle: '__________ ____________________________'
+        title: 'Bases to Becoming a Millionaire', speaker: 'Sam Liu',
+        speakerTitle: 'Registered Representative of Transamerica', image: 'sam-liu.webp'
       },
       {
         title: 'TBD', speaker: 'TBD',
