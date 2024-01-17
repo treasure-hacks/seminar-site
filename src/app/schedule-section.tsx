@@ -62,7 +62,8 @@ const schedule: EventItemProps[] = [
 export function ScheduleSection(){
 
     return (
-        <div id="schedule" className="xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex flex-col items-center lg:items-center px-14 max-[350px]:px-3 py-10">
+        <div id="schedule" className="xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex flex-col items-center lg:items-center px-14 max-[400px]:px-3 py-10">
+            <h2 className='text-4xl mt-8 mb-8 text-center'>Schedule</h2>
             {schedule.map((event: EventItemProps) => <Leaf key={ event.title } title={ event.title } time={ event.time } duration={ event.duration } description={ event.description }/>)}
         </div>
     );
@@ -78,13 +79,13 @@ function Leaf({ title, time, duration, description }: EventItemProps){
                             <Image src="clock.png" width="24" height="24" alt="clock"></Image>
                             <p className="text-l">{duration}</p>
                         </div>
-                        <p className="text-3xl my-[1%] font-bold max-[386px]:break-words">{title}</p>
-                        <p className="text-l font-normal">{description}</p>
+                        <p className="text-3xl my-[1%] font-bold max-[400px]:text-2xl">{title}</p>
+                        <p className="text-l font-normal max-[400px]:text-m">{description}</p>
                     </div>
                 </div>
 
                 <div className="flex flex-row items-center flex-auto justify-end">
-                    <p className="text-3xl font-semibold mr-[3%]">{time}</p>
+                    <p className="text-3xl font-semibold mr-[3%] max-[450px]:text-2xl">{time}</p>
                     <div className="w-[5%] aspect-square rounded-full bg-white relative left-2"></div>
                     <div className="w-[15%] border border-solid border-t-8"></div>
                 </div>
