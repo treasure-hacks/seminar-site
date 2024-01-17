@@ -1,6 +1,13 @@
 import Image from "next/image"
 
-const schedule=[
+interface EventItemProps {
+    title: string,
+    time: string,
+    duration: string,
+    description: string
+}
+
+const schedule: EventItemProps[] =[
     {
         title:"Opening Ceremony",
         time:"10:00 AM",
@@ -55,38 +62,33 @@ const schedule=[
 export function ScheduleSection(){
 
     return (
-        <div id="schedule" className="delimitationred xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex flex-col items-center lg:justify-between lg:items-center">
-            {schedule.map((element, index) => <Leaf key={element.title} keyName={element.title} title={element.title} time={element.time} duration={element.duration} description={element.description} index={index}/>)}
+        <div id="schedule" className="xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex flex-col items-center lg:items-center px-14 max-[350px]:px-10 py-10">
+            {schedule.map((event: EventItemProps) => <Leaf key={ event.title } title={ event.title } time={ event.time } duration={ event.duration } description={ event.description }/>)}
         </div>
     );
 }
 
-export function Leaf(props: {keyName: string, title: string, time: string,  duration: string, description: string, index: number}){
+function Leaf({ title, time, duration, description }: EventItemProps){
     return (
         <>
-            <li  key={props.keyName+"topspace"} className={"flex  w-full text-white flex-row-reverse"}>
+            <li  key={title} className="flex w-full text-white flex-row-reverse my-[2%]">
                 <div className={"w-[50%] flex border-white-16 flex-row border-l-8 px-[2%]"}>
                     <div className={"flex flex-col font-normal w-[80%] text-left content-center"}>
                         <div className="flex flex-row">
                             <Image src="clock.png" width="24" height="24" alt="clock"></Image>
-                            <p className="text-l">{props.duration}</p>
+                            <p className="text-l">{duration}</p>
                         </div>
-                        <p className="text-3xl my-[1%] font-bold">{props.title}</p>
-                        <p className="text-l font-normal">{props.description}</p>
+                        <p className="text-3xl my-[1%] font-bold max-[386px]:break-words">{title}</p>
+                        <p className="text-l font-normal">{description}</p>
                     </div>
                 </div>
 
                 <div className={"flex flex-row items-center flex-auto justify-end"}>
-                    <p className="text-3xl font-semibold mr-[3%]">{props.time}</p>
+                    <p className="text-3xl font-semibold mr-[3%]">{time}</p>
                     <div className="w-[5%] aspect-square rounded-full bg-white relative left-2"></div>
                     <div className="w-[15%] border border-solid border-t-8"></div>
                 </div>
 
-            </li>
-
-            <li  key={props.keyName+"bottomspace"} className={"flex w-full h-[25px]"}>
-                <div className="w-[50%] h-full"></div>
-                <div className="w-[50%] h-full border-l-8"></div>
             </li>
         </>
     );
