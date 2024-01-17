@@ -62,7 +62,7 @@ const schedule: EventItemProps[] = [
 export function ScheduleSection(){
 
     return (
-        <div id="schedule" className="xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex flex-col items-center lg:items-center px-14 max-[350px]:px-10 py-10">
+        <div id="schedule" className="xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex flex-col items-center lg:items-center px-14 max-[350px]:px-3 py-10">
             {schedule.map((event: EventItemProps) => <Leaf key={ event.title } title={ event.title } time={ event.time } duration={ event.duration } description={ event.description }/>)}
         </div>
     );
@@ -71,8 +71,8 @@ export function ScheduleSection(){
 function Leaf({ title, time, duration, description }: EventItemProps){
     return (
         <>
-            <li  key={title} className="flex w-full text-white flex-row-reverse my-[2%]">
-                <div className={"w-[50%] flex border-white-16 flex-row border-l-8 px-[2%]"}>
+            <li  key={title} className="flex w-full text-white flex-row-reverse">
+                <div className={"w-[50%] flex border-white-16 flex-row border-l-8 px-[2%] py-[1%]"}>
                     <div className={"flex flex-col font-normal w-[80%] text-left content-center"}>
                         <div className="flex flex-row">
                             <Image src="clock.png" width="24" height="24" alt="clock"></Image>
@@ -83,7 +83,7 @@ function Leaf({ title, time, duration, description }: EventItemProps){
                     </div>
                 </div>
 
-                <div className={"flex flex-row items-center flex-auto justify-end"}>
+                <div className="flex flex-row items-center flex-auto justify-end">
                     <p className="text-3xl font-semibold mr-[3%]">{time}</p>
                     <div className="w-[5%] aspect-square rounded-full bg-white relative left-2"></div>
                     <div className="w-[15%] border border-solid border-t-8"></div>
