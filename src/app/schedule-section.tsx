@@ -7,54 +7,54 @@ interface EventItemProps {
     description: string
 }
 
-const schedule: EventItemProps[] =[
+const schedule: EventItemProps[] = [
     {
-        title:"Opening Ceremony",
-        time:"10:00 AM",
-        duration:"20 min",
-        description:"Check in starting at 9:00 AM"
+        title: "Opening Ceremony",
+        time: "10:00 AM",
+        duration: "20 min",
+        description: "Check in starting at 9:00 AM"
     },
     {
-        title:"Networking",
-        time:"10:20 AM",
-        duration:"75 min",
-        description:"Learn and practice the whole shabang of networking!"
+        title: "Networking",
+        time: "10:20 AM",
+        duration: "75 min",
+        description: "Learn and practice the whole shabang of networking!"
     },
     {
-        title:"Lunch",
-        time:"11:35 AM",
-        duration:"30 min",
-        description:"Eat food - pizza."
+        title: "Lunch",
+        time: "11:35 AM",
+        duration :"30 min",
+        description: "Eat food - pizza."
     },
     {
-        title:"Presenting",
-        time:"12:10 PM",
-        duration:"75 min",
-        description:"Learn to deliver gnarly presentations"
+        title: "Presenting",
+        time: "12:10 PM",
+        duration: "75 min",
+        description: "Learn to deliver gnarly presentations"
     },
     {
-        title:"Pitch Competition",
-        time:"1:35 PM",
-        duration:"150 min",
-        description:"Pitch to judges, get the prizes"
+        title: "Pitch Competition",
+        time: "1:35 PM",
+        duration: "150 min",
+        description: "Pitch to judges, get the prizes"
     },
     {
-        title:"Dinner",
-        time:"4:10 PM",
-        duration:"30 min",
-        description:"Get filled with Chick Fil A"
+        title: "Dinner",
+        time: "4:10 PM",
+        duration: "30 min",
+        description: "Get filled with Chick Fil A"
     },
     {
-        title:"Financial Literacy",
-        time:"4:45 PM",
-        duration:"30 min",
-        description:"Learn to reduce losses"
+        title: "Financial Literacy",
+        time: "4:45 PM",
+        duration: "30 min",
+        description: "Learn to reduce losses"
     },
     {
-        title:"Closing Ceremony",
-        time:"5:20 PM",
-        duration:"30 min",
-        description:"Wind down, winners announced, and reflecting on the fun-filled day"
+        title: "Closing Ceremony",
+        time: "5:20 PM",
+        duration: "30 min",
+        description: "Wind down, winners announced, and reflecting on the fun-filled day"
     },
     
 ];
