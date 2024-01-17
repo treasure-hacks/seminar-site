@@ -64,18 +64,20 @@ export function ScheduleSection(){
 export function Leaf(props: {keyName: string, title: string, time: string,  duration: string, description: string, index: number}){
     return (
         <>
-            <li  key={props.keyName} className={"flex w-full text-white flex-row-reverse"}>
-                <div className={"w-[50%] flex border-l-8 align-left"}>
-                    <div className="flex flex-row">
-                        <Image src="clock.png" width="24" height="24" alt="clock"></Image>
-                        <p className="font-medium px-[1%]">{props.duration}</p>
+            <li  key={props.keyName+"topspace"} className={"flex  w-full text-white flex-row-reverse"}>
+                <div className={"w-[50%] flex border-white-16 flex-row border-l-8 px-[2%]"}>
+                    <div className={"flex flex-col font-normal w-[80%] text-left content-center"}>
+                        <div className="flex flex-row">
+                            <Image src="clock.png" width="24" height="24" alt="clock"></Image>
+                            <p className="text-l">{props.duration}</p>
+                        </div>
+                        <p className="text-3xl my-[1%] font-bold">{props.title}</p>
+                        <p className="text-l font-normal">{props.description}</p>
                     </div>
-                    <p className="text-[32px] my-[0.02%] font-bold">{props.title}</p>
-                    <p className="text-[16px] font-normal">{props.description}</p>
                 </div>
 
                 <div className={"flex flex-row items-center flex-auto justify-end"}>
-                    <p className="text-[32px] font-semibold mr-[3%]">{props.time}</p>
+                    <p className="text-3xl font-semibold mr-[3%]">{props.time}</p>
                     <div className="w-[5%] aspect-square rounded-full bg-white relative left-2"></div>
                     <div className="w-[15%] border border-solid border-t-8"></div>
                 </div>
