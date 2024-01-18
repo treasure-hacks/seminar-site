@@ -76,7 +76,7 @@ function Leaf({ title, time, duration, description }: EventItemProps){
                 <div className={"w-[50%] flex border-white-16 flex-row border-l-8 px-[2%] py-5"}>
                     <div className={"flex flex-col font-normal w-[80%] text-left content-center"}>
                         <div className="flex flex-row">
-                            <Image src="clock.png" width="24" height="24" alt="clock"></Image>
+                            <Image src="clock.svg" width="24" height="24" alt="clock"></Image>
                             <p className="text-l">{duration}</p>
                         </div>
                         <p className="text-3xl my-[1%] font-bold max-[400px]:text-2xl">{title}</p>
