@@ -72,7 +72,7 @@ export function ScheduleSection(){
 function Leaf({ title, time, duration, description }: EventItemProps){
     return (
         <>
-            <li  key={title} className="flex w-full text-white flex-row-reverse">
+            <div  key={title} className="flex w-full text-white flex-row-reverse">
                 <div className={"w-[50%] max-[450px]:w-[56%] flex border-white-16 flex-row border-l-8 px-[2%] py-5"}>
                     <div className={"flex flex-col font-normal w-[100%] text-left content-center"}>
                         <div className="flex flex-row">
@@ -90,7 +90,7 @@ function Leaf({ title, time, duration, description }: EventItemProps){
                     <div className="w-[15%] border border-solid border-t-8"></div>
                 </div>
 
-            </li>
+            </div>
         </>
     );
 }
