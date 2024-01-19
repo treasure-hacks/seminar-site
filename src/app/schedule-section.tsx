@@ -84,8 +84,8 @@ function Leaf({ title, time, duration, description }: EventItemProps){
                     </div>
                 </div>
 
-                <div className="flex flex-row items-center flex-auto justify-end w-[50%] max-[450px]:w-[44%]">
-                    <p className="text-3xl font-semibold mr-[3%] max-[457px]:text-2xl">{time}</p>
+                <div className="flex flex-row items-center flex-auto justify-end w-[50%] max-[450px]:w-[35%]">
+                    <p className="text-3xl font-semibold mr-[3%] max-[457px]:text-2xl w-[140px]">{time}</p>
                     <div className="w-[5%] aspect-square rounded-full bg-white relative left-2"></div>
                     <div className="w-[15%] border border-solid border-t-8"></div>
                 </div>
