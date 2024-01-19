@@ -6,6 +6,7 @@ import { InfoSection } from './info-section'
 import { EventDescription } from './event-description-section'
 import { ActivitiesSection } from './activities-section'
 import { WorkshopsSection } from './workshops-section'
+import { ScheduleSection } from './schedule-section'
 import { JudgesSection } from './judges-section'
 import { SponsorsSection } from './sponsors-section'
 import { FAQSection } from './faq-section'
@@ -23,6 +24,7 @@ export default function Home() {
         <EventDescription/>
         <ActivitiesSection/>
         <WorkshopsSection/>
+        <ScheduleSection/>
         <JudgesSection/>
         <SponsorsSection/>
         <FAQSection/>
