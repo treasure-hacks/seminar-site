@@ -73,7 +73,7 @@ function Leaf({ title, time, duration, description }: EventItemProps){
     return (
         <>
             <div  key={title} className="flex w-full text-white flex-row-reverse">
-                <div className={"w-[50%] max-[450px]:w-[56%] flex border-white-16 flex-row border-l-8 px-[2%] py-5"}>
+                <div className={"w-[50%] max-[450px]:w-[60%] flex border-white-16 flex-row border-l-8 px-[2%] py-5"}>
                     <div className={"flex flex-col font-normal w-[100%] text-left content-center"}>
                         <div className="flex flex-row">
                             <Image src="clock.svg" width="24" height="24" alt="clock"></Image>
@@ -84,8 +84,8 @@ function Leaf({ title, time, duration, description }: EventItemProps){
                     </div>
                 </div>
 
-                <div className="flex flex-row items-center flex-auto justify-end w-[50%] max-[450px]:w-[35%]">
-                    <p className="text-3xl font-semibold mr-[3%] max-[457px]:text-2xl w-[140px]">{time}</p>
+                <div className="flex flex-row items-center flex-auto justify-end w-[50%] max-[450px]:w-[40%]">
+                    <p className="text-3xl font-semibold mr-[3%] max-[450px]:mr-0 max-[457px]:text-2xl w-[140px] text-right">{time}</p>
                     <div className="w-[5%] aspect-square rounded-full bg-white relative left-2"></div>
                     <div className="w-[15%] border border-solid border-t-8"></div>
                 </div>
