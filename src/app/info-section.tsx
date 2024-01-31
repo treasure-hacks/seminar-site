@@ -12,7 +12,7 @@ const directionsText = <div>
   <a className="maps-link underline"
     href="https://www.google.com/maps/place/9600+N+Torrey+Pines+Rd,+La+Jolla,+CA+92037"
     target="_blank">Link to directions</a><br/>
-  <span>Parking Layout TBD</span>
+  <a className="underline" href="/event-parking.pdf" target="_blank">Parking Instructions</a>
 </div>
 
 const eventInfo: InfoItemProps[] = [
