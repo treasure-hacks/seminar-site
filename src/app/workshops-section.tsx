@@ -18,7 +18,7 @@ const WORKSHOPS: Workshop[] = [
     name: 'Presenting',
     sections: [
       {
-        title: 'Moving Your Audience', speaker: 'Brant Cooper',
+        title: 'MUVE Your Audience', speaker: 'Brant Cooper',
         speakerTitle: 'Co-Founder of Startup San Diego', image: 'brant-cooper.webp'
       },
       {
