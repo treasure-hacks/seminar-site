@@ -48,7 +48,7 @@ const WORKSHOPS: Workshop[] = [
         speakerTitle: 'Registered Representative of Transamerica', image: 'sam-liu.webp'
       },
       {
-        title: 'Workshop Name TBD', speaker: 'Daniel Nagey',
+        title: 'Building Credit & Credit Scores', speaker: 'Daniel Nagey',
         speakerTitle: 'Content Marketing Specialist at MyPoint', image: 'daniel-nagey.webp'
       }
     ]
