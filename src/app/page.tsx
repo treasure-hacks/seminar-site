@@ -9,6 +9,7 @@ import { WorkshopsSection } from './workshops-section'
 import { ScheduleSection } from './schedule-section'
 import { JudgesSection } from './judges-section'
 import { SponsorsSection } from './sponsors-section'
+import { PrizesSection } from './prizes-section'
 import { FAQSection } from './faq-section'
 import { QuoteSection } from './quote-section'
 import { PageFooter } from './footer'
@@ -27,6 +28,7 @@ export default function Home() {
         <ScheduleSection/>
         <JudgesSection/>
         <SponsorsSection/>
+        <PrizesSection/>
         <FAQSection/>
         <QuoteSection/>
 
