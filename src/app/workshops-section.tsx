@@ -35,7 +35,7 @@ const WORKSHOPS: Workshop[] = [
         speakerTitle: 'former CEO of ICE', image: 'delinda-forsythe.webp'
       },
       {
-        title: 'Networking with Empathy', speaker: 'Christiana Russell',
+        title: 'EQ for Professional Success', speaker: 'Christiana Russell',
         speakerTitle: 'Mending Wing Foundation', image: 'christiana-russell.webp'
       }
     ]
