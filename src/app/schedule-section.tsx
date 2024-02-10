@@ -11,12 +11,12 @@ const schedule: EventItemProps[] = [
     {
         title: "Opening Ceremony",
         time: "10:00 AM",
-        duration: "20 min",
+        duration: "15 min",
         description: "Check in starting at 9:00 AM"
     },
     {
         title: "Networking",
-        time: "10:20 AM",
+        time: "10:15 AM",
         duration: "75 min",
         description: "Learn and practice the whole shabang of networking!"
     },
@@ -28,32 +28,38 @@ const schedule: EventItemProps[] = [
     },
     {
         title: "Presenting",
-        time: "12:10 PM",
+        time: "12:15 PM",
         duration: "75 min",
         description: "Learn to deliver gnarly presentations"
     },
     {
-        title: "Pitch Competition",
+        title: "Boba",
         time: "1:35 PM",
+        duration: "15 min",
+        description: "Prepare for a tapioca tornado - ChatGPT"
+    },
+    {
+        title: "Pitch Competition",
+        time: "1:50 PM",
         duration: "150 min",
         description: "Pitch to judges, get the prizes"
     },
     {
-        title: "Dinner",
-        time: "4:10 PM",
+        title: "Break",
+        time: "4:25 PM",
         duration: "30 min",
-        description: "Get filled with Chick Fil A"
+        description: "Good vibes mandatory"
     },
     {
         title: "Financial Literacy",
-        time: "4:45 PM",
+        time: "5:00 PM",
         duration: "30 min",
         description: "Learn to reduce losses"
     },
     {
         title: "Closing Ceremony",
-        time: "5:20 PM",
-        duration: "30 min",
+        time: "5:35 PM",
+        duration: "20 min",
         description: "Wind down, winners announced, and reflecting on the fun-filled day"
     },
     
