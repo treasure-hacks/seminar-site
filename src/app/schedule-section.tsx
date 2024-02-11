@@ -16,7 +16,7 @@ const schedule: EventItemProps[] = [
     },
     {
         title: "Networking",
-        time: "10:15 AM",
+        time: "10:20 AM",
         duration: "75 min",
         description: "Learn and practice the whole shabang of networking!"
     },
