@@ -22,7 +22,7 @@ const schedule: EventItemProps[] = [
     },
     {
         title: "Lunch",
-        time: "11:35 AM",
+        time: "11:40 AM",
         duration :"30 min",
         description: "Eat food - pizza."
     },
@@ -35,7 +35,7 @@ const schedule: EventItemProps[] = [
     {
         title: "Boba",
         time: "1:35 PM",
-        duration: "15 min",
+        duration: "10 min",
         description: "Prepare for a tapioca tornado - ChatGPT"
     },
     {
