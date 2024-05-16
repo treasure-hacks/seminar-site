@@ -3,6 +3,27 @@ import PageHeader from './PageHeader';
 import StatsSection from './StatsSection';
 import EventHighlightsSection from './EventHighlightsSection';
 import TestimonialsSection from './TestimonialsSection';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  generator: 'Soft Skill Seminar 2024',
+  title: 'Soft Skill Seminar 2024 | Treasure Hacks',
+  description: 'We taught students soft skills through games and hands-on experimentation to help them pursue their passions with confidence. ' +
+    'Check out our event highlights, featuring expert workshops, hands-on activities, and a feedback-driven pitch competition!',
+  applicationName: 'Soft Skill Seminar 2024 | Treasure Hacks',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Treasure Hacks', 'Soft Skills', 'Seminar', 'Workshop', 'Presenting', 'Networking'],
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  icons: {
+    icon: '/icons/android-chrome-512x512.png',
+    shortcut: '/icons/favicon.ico',
+    apple: '/icons/apple-touch-icon.png'
+  }
+}
 
 export default function Home() {
   return (
