@@ -46,15 +46,15 @@ const highlights: Highlight[] = [
     description: 'Participants then each delievered a product pitch 3 times. Within each iteration, business experts provided feedback ' +
       'on how to tell the story in a concise and convincing manner, which allowed participants to further practice and strengthen their presenting skills.',
     images: [
-      ['competition1.webp', 'Participants During Our Pitch Competition'],
-      ['competition2.webp', 'Participants During Our Pitch Competition'],
-      ['competition3.webp', 'Participants During Our Pitch Competition'],
-      ['competition4.webp', 'Participants During Our Pitch Competition'],
-      ['competition5.webp', 'Participants During Our Pitch Competition'],
-      ['competition6.webp', 'Participants During Our Pitch Competition'],
-      ['competition7.webp', 'Participants During Our Pitch Competition'],
-      ['competition8.webp', 'Participants During Our Pitch Competition'],
-      ['competition9.webp', 'Participants During Our Pitch Competition']
+      ['competition1.webp', 'Team iClothes delivering their pitch'],
+      ['competition2.webp', 'The Apple Backpack team evaluating their presentation'],
+      ['competition3.webp', 'Team iMove sharing a moment of laughter while working on their pitch'],
+      ['competition4.webp', 'The iClothes team between rounds of pitching'],
+      ['competition5.webp', 'The iCode team during the pitch development period'],
+      ['competition6.webp', 'Team iCode delivering their pitch'],
+      ['competition7.webp', 'The iClothes team further developing their pitch'],
+      ['competition8.webp', 'iMove considering design and story decisions for their presentation'],
+      ['competition9.webp', 'Anthony Jenanian talking through iClothes\'s presentation']
     ]
   },
   {
@@ -62,12 +62,12 @@ const highlights: Highlight[] = [
     description: 'We also invited working professionals to share their own learnings from the field. Whether it was about forming stronger connections ' +
       'or how to start one\'s financial literacy journey, they shared their passions and inspirations to the next generation of young leaders.',
     images: [
-      ['workshop1.webp', 'Participants During Our Pitch workshop'],
-      ['workshop2.webp', 'Participants During Our Pitch workshop'],
-      ['workshop3.webp', 'Participants During Our Pitch workshop'],
-      ['workshop4.webp', 'Participants During Our Pitch workshop'],
-      ['workshop5.webp', 'Participants During Our Pitch workshop'],
-      ['workshop6.webp', 'Participants During Our Pitch workshop']
+      ['workshop1.webp', 'Sam Liu engaging the audience on financial diversification'],
+      ['workshop2.webp', 'Christiana Russell talking about EQ and networking'],
+      ['workshop3.webp', 'Brant Cooper talking about moving an audience'],
+      ['workshop4.webp', 'Daniel and Carmen talking about Smart Money Moves'],
+      ['workshop5.webp', 'DeLinda talking about the importance of building a network of trust'],
+      ['workshop6.webp', 'Bryan Bennett sharing the basics of storytelling with data']
     ]
   },
   {
