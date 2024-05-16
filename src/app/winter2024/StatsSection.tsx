@@ -8,16 +8,16 @@ export default function StatsSection() {
       <div>
         <div className="relative before:absolute before:inline-block before:top-[-28px] before:left-[-25px] before:w-[70px] before:h-[80px]
           before:bg-cover before:bg-[url(/images/winter2024/gold-spark.webp)]">
-          <Image width="275" height="275" src="/images/winter2024/volunteers.png" alt="Volunteers and Lumi" priority />
+          <Image width="275" height="275" src="/images/winter2024/volunteers.webp" alt="Volunteers and Lumi" priority />
         </div>
         <p className="text-center text-3xl max-w-[180px] mx-auto leading-[1.25] mt-2">62 Total Attendees</p>
       </div>
       <div>
-        <Image width="275" height="275" src="/images/winter2024/hours.png" alt="Bird of Paradise" priority />
+        <Image width="275" height="275" src="/images/winter2024/hours.webp" alt="Bird of Paradise" priority />
         <p className="text-center text-3xl max-w-[180px] mx-auto leading-[1.25] mt-2">90% stayed all 8 hours</p>
       </div>
       <div>
-        <Image width="275" height="275" src="/images/winter2024/prizes.png" alt="HyperX Headset" priority />
+        <Image width="275" height="275" src="/images/winter2024/prizes.webp" alt="HyperX Headset" priority />
         <p className="text-center text-3xl max-w-[180px] mx-auto leading-[1.25] mt-2">$2,000 in{' '}
           <span className="relative inline-block before:inline-block before:absolute before:bottom-[-30px] before:right-[-40px] before:w-[40px] before:h-[40px]
             before:bg-cover before:bg-[url(/images/winter2024/red-spark.webp)]">Prizes</span></p>
