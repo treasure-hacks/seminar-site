@@ -9,7 +9,9 @@ function LeftSide() {
   ">
     <p className="text-5xl mb-2 font-medium max-[640px]:text-4xl max-[640px]:my-0">Treasure Hacks</p>
     <div>
-      <h1 className="text-7xl font-semibold max-[640px]:text-5xl">Soft Skill Seminar</h1>
+      <h1 className="text-7xl font-semibold max-[640px]:text-5xl">Soft Skill{' '}
+        <span className="relative inline-block before:bg-[url(/images/winter2024/sparkles.webp)] before:right-[-40px] before:top-[-20px] before:inline-block
+        before:absolute before:w-[50px] before:h-[64px] before:bg-cover max-[1240px]:text-8xl max-[960px]:text-7xl max-[640px]:text-5xl max-[440px]:text-6xl">Seminar</span></h1>
     </div>
     <h2 className={"text-6xl mt-3 mb-3 max-[640px]:text-5xl max-[640px]:my-0 " + ooohBaby.className}>Event Recap</h2>
     <div className="pr-10 max-[960px]:px-0">

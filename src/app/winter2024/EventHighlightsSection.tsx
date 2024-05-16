@@ -102,7 +102,7 @@ function Section({ index, data }: { index: number, data: Highlight }) {
   let splide: Splide | null = null
 
   const img = <>
-    <div className="splide h-[330px] max-[1100px]:h-[300px] max-[960px]:h-[396px] max-[590px]:h-[320px] max-[480px]:h-[240px]" ref={el => {
+    <div className="splide h-[330px] max-[1100px]:h-[300px] max-[960px]:h-[396px] max-[590px]:h-[320px] max-[480px]:h-[240px] max-w-[500px]" ref={el => {
       if (!el || splide) return splide?.destroy()
       splide = new Splide(el, options)
       splide.mount()
