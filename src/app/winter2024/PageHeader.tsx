@@ -25,14 +25,14 @@ function PhotoGrid() {
   return <div className="grid grid-cols-2 gap-8 rotate-12 relative top-[max(calc(120px-11vw),-80px)] right-[-9vw] w-[45vw] shrink-0 min-w-[600px] max-w-[800px] content-center -ml-16
     max-[960px]:absolute max-[960px]:opacity-20 max-[960px]:w-[750px]
   ">
-    <Image src="/images/winter2024/header1.png" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
-    <Image src="/images/winter2024/header2.png" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
-    <Image src="/images/winter2024/header3.png" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
-    <Image src="/images/winter2024/header4.png" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
-    <Image src="/images/winter2024/header5.png" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
-    <Image src="/images/winter2024/header6.png" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
-    <Image src="/images/winter2024/header7.png" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
-    <Image src="/images/winter2024/header8.png" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
+    <Image src="/images/winter2024/header1.webp" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
+    <Image src="/images/winter2024/header2.webp" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
+    <Image src="/images/winter2024/header3.webp" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
+    <Image src="/images/winter2024/header4.webp" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
+    <Image src="/images/winter2024/header5.webp" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
+    <Image src="/images/winter2024/header6.webp" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
+    <Image src="/images/winter2024/header7.webp" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
+    <Image src="/images/winter2024/header8.webp" width="512" height="315" alt="THIS IS NOT UPDATED YET" />
   </div>
 }
 

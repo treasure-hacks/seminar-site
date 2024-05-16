@@ -16,13 +16,13 @@ const highlights: Highlight[] = [
     description: 'Before starting, students were able to get some free swag from our sponsors like HyperX and the ' +
       'Extended Studies program at UC San Diego. Students got time to meet one another before the full day of workshops and gamified events!',
     images: [
-      ['opening1.png', 'The Treasure Hacks team checking in participants'],
-      ['opening2.jpg', 'A volunteer meeting taking place before the event'],
-      ['opening3.jpg', 'Welcoming an industry professional to speak in their workshop'],
-      ['opening4.jpg', 'Volunteers getting ready to start check-in'],
-      ['opening5.jpg', 'Co-founders Ethan Wang, Ethan Kosaki, and Brandon Joe are ready to start the day'],
-      ['opening6.jpg', 'Brandon Joe and Ethan Kosaki welcome a volunteer for the networking portion'],
-      ['opening7.jpg', 'Ethan Xie, Ethan Kosaki, and Brandon Joe at the beginning of the event']
+      ['opening1.webp', 'The Treasure Hacks team checking in participants'],
+      ['opening2.webp', 'A volunteer meeting taking place before the event'],
+      ['opening3.webp', 'Welcoming an industry professional to speak in their workshop'],
+      ['opening4.webp', 'Volunteers getting ready to start check-in'],
+      ['opening5.webp', 'Co-founders Ethan Wang, Ethan Kosaki, and Brandon Joe are ready to start the day'],
+      ['opening6.webp', 'Brandon Joe and Ethan Kosaki welcome a volunteer for the networking portion'],
+      ['opening7.webp', 'Ethan Xie, Ethan Kosaki, and Brandon Joe at the beginning of the event']
     ]
   },
   {
@@ -30,16 +30,16 @@ const highlights: Highlight[] = [
     description: 'For both networking and presented, we designed games and activities that allowed participants to practice and develop ' +
       'these skills in a fun way. They learned new skills and significantly improved at breaking the ice with industry professionals.',
     images: [
-      ['game1.jpg', 'Musical Tables Networking'],
-      ['game2.jpg', 'Musical Tables Networking'],
-      ['game3.jpg', 'Slide Deck Roulette'],
-      ['game4.jpg', 'Musical Tables Networking'],
-      ['game5.png', 'Musical Tables Networking'],
-      ['game6.jpg', 'Slide Deck Roulette'],
-      ['game7.jpg', 'Musical Tables Networking'],
-      ['game8.jpg', 'Musical Tables Networking'],
-      ['game9.jpg', 'Musical Tables Networking'],
-      ['game10.jpg', 'Slide Deck Roulette']
+      ['game1.webp', 'Musical Tables Networking'],
+      ['game2.webp', 'Musical Tables Networking'],
+      ['game3.webp', 'Slide Deck Roulette'],
+      ['game4.webp', 'Musical Tables Networking'],
+      ['game5.webp', 'Musical Tables Networking'],
+      ['game6.webp', 'Slide Deck Roulette'],
+      ['game7.webp', 'Musical Tables Networking'],
+      ['game8.webp', 'Musical Tables Networking'],
+      ['game9.webp', 'Musical Tables Networking'],
+      ['game10.webp', 'Slide Deck Roulette']
     ]
   },
   {
@@ -47,15 +47,15 @@ const highlights: Highlight[] = [
     description: 'Participants then each delievered a product pitch 3 times. Within each iteration, business experts provided feedback ' +
       'on how to tell the story in a concise and convincing manner, which allowed participants to further practice and strengthen their presenting skills.',
     images: [
-      ['competition1.jpeg', 'Participants During Our Pitch Competition'],
-      ['competition2.jpeg', 'Participants During Our Pitch Competition'],
-      ['competition3.jpeg', 'Participants During Our Pitch Competition'],
-      ['competition4.jpeg', 'Participants During Our Pitch Competition'],
-      ['competition5.jpeg', 'Participants During Our Pitch Competition'],
-      ['competition6.jpeg', 'Participants During Our Pitch Competition'],
-      ['competition7.jpeg', 'Participants During Our Pitch Competition'],
-      ['competition8.jpeg', 'Participants During Our Pitch Competition'],
-      ['competition9.jpeg', 'Participants During Our Pitch Competition']
+      ['competition1.webp', 'Participants During Our Pitch Competition'],
+      ['competition2.webp', 'Participants During Our Pitch Competition'],
+      ['competition3.webp', 'Participants During Our Pitch Competition'],
+      ['competition4.webp', 'Participants During Our Pitch Competition'],
+      ['competition5.webp', 'Participants During Our Pitch Competition'],
+      ['competition6.webp', 'Participants During Our Pitch Competition'],
+      ['competition7.webp', 'Participants During Our Pitch Competition'],
+      ['competition8.webp', 'Participants During Our Pitch Competition'],
+      ['competition9.webp', 'Participants During Our Pitch Competition']
     ]
   },
   {
@@ -63,12 +63,12 @@ const highlights: Highlight[] = [
     description: 'We also invited working professionals to share their own learnings from the field. Whether it was about forming stronger connections ' +
       'or how to start one\'s financial literacy journey, they shared their passions and inspirations to the next generation of young leaders.',
     images: [
-      ['workshop1.jpg', 'Participants During Our Pitch workshop'],
-      ['workshop2.jpg', 'Participants During Our Pitch workshop'],
-      ['workshop3.jpg', 'Participants During Our Pitch workshop'],
-      ['workshop4.jpg', 'Participants During Our Pitch workshop'],
-      ['workshop5.jpg', 'Participants During Our Pitch workshop'],
-      ['workshop6.jpg', 'Participants During Our Pitch workshop']
+      ['workshop1.webp', 'Participants During Our Pitch workshop'],
+      ['workshop2.webp', 'Participants During Our Pitch workshop'],
+      ['workshop3.webp', 'Participants During Our Pitch workshop'],
+      ['workshop4.webp', 'Participants During Our Pitch workshop'],
+      ['workshop5.webp', 'Participants During Our Pitch workshop'],
+      ['workshop6.webp', 'Participants During Our Pitch workshop']
     ]
   },
   {
@@ -76,8 +76,8 @@ const highlights: Highlight[] = [
     description: 'By the end of the event, participants felt like they had known their teams for longer than just the 8 hours they were there. ' +
       'Additionally, the organizers were amazed by the 90% whole-day-retention and celebrated the work that everyone put in to make the event a possibility.',
     images: [
-      ['conclusion1.png', 'Prize Winners'],
-      ['conclusion2.jpg', 'Group Photo']
+      ['conclusion1.webp', 'Prize Winners'],
+      ['conclusion2.webp', 'Group Photo']
     ]
   }
 ];
