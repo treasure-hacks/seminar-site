@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-// import { Splide } from '@splidejs/splide';
 import './highlights';
 import Splide from "@splidejs/splide";
 
@@ -82,43 +81,47 @@ const highlights: Highlight[] = [
   }
 ];
 
-const options =  {
-    width: 500,
-    type: 'loop',
-    flickPower: 200
+const options = {
+  width: 500,
+  type: 'loop',
+  flickPower: 200,
+  breakpoints: {
+    1100: { width: 400 },
+    960: { width: 600 }
   }
+}
 
 function Section({ index, data }: { index: number, data: Highlight }) {
   const { title, description, images } = data;
   const align = index % 2 ? 'text-right' : 'text-left';
-  const text = <div className={"flex flex-col justify-center " + align}>
+  const text = <div className={"max-[960px]:mt-4 max-[960px]:text-left flex flex-col justify-center " + align}>
     <h2 className="text-4xl mb-5">{title}</h2>
-    <p className="max-w-[560px] leading-[1.67] text-2xl">{description}</p>
+    <p className="max-w-[560px] leading-[1.67] text-2xl max-[960px]:max-w-[600px]">{description}</p>
   </div>
 
   let splide: Splide | null = null
 
   const img = <>
-    <div className="splide h-[330px]" ref={el => {
+    <div className="splide h-[330px] max-[1100px]:h-[300px] max-[960px]:h-[396px] max-[590px]:h-[320px] max-[480px]:h-[240px]" ref={el => {
       if (!el || splide) return splide?.destroy()
       splide = new Splide(el, options)
       splide.mount()
-    }}><div className="splide__track rounded-lg overflow-hidden">
-      <ul className="splide__list">
-        {images.map(([src, alt]) => <li className="splide__slide" key={src}>
-          <Image src={"/images/winter2024/" + src} alt={alt} width="500" height="330" className="rounded-lg object-cover h-[330px]" />
+    }}><div className="splide__track rounded-lg overflow-hidden h-full">
+      <ul className="splide__list h-full">
+        {images.map(([src, alt]) => <li className="splide__slide h-full" key={src}>
+          <Image src={"/images/winter2024/" + src} alt={alt} width="500" height="330" className="rounded-lg object-cover h-full max-[960px]:w-full" />
         </li>)}
       </ul>
     </div></div>
   </>
-  return <div className="flex mx-auto justify-center gap-9 items-center">
+  return <div className={"flex mx-auto justify-center gap-9 items-center max-[960px]:flex-col-reverse" + (index % 2 ? '' : '_ max-[960px]:flex-col')}>
     {index % 2 ? <>{img}{text}</> : <>{text}{img}</> }
   </div>
 }
 
 
 export default function EventHighlightsSection() {
-  return <div className="max-w-[1500px] py-12 px-14 mx-auto min-h-[480px] z-[1] relative">
+  return <div className="max-w-[1500px] py-12 px-14 mx-auto min-h-[480px] z-[1] relative max-[640px]:px-8">
     <h2 className="text-center text-5xl mb-14 mt-4">Event Breakdown</h2>
     <div className="flex flex-col gap-16">
       {highlights.map((h, i) => <Section key={i} index={i} data={h} />)}

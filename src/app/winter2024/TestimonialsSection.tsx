@@ -16,7 +16,7 @@ const testimonials = [
 
 
 export default function TestimonialsSection() {
-  return <div className="max-w-[1500px] py-12 px-14 mx-auto min-h-[480px] z-[1] relative">
+  return <div className="max-w-[1500px] py-12 px-14 mx-auto min-h-[480px] z-[1] relative max-[640px]:px-8">
     <h2 className="text-center text-5xl mb-14 mt-4">Student Takeaways</h2>
     {testimonials.map(t => <div key={t.name} className="flex max-w-[875px] items-center mb-10 rounded-2xl overflow-hidden bg-[#2E629E] mx-auto
       max-[800px]:flex-col max-[800px]:max-w-[400px] max-[800px]:px-8 max-[800px]:py-8

@@ -4,7 +4,7 @@ export default function StatsSection() {
   return <div className="max-w-[1200px] pt-[calc(40px+4vw)] pb-10 px-14 mx-auto min-h-[400px] z-[1] relative">
     <h2 className="text-center text-5xl mb-14">Quick Figures</h2>
     
-    <div className="flex gap-10 justify-evenly h-full max-w-[1200px] mx-auto">
+    <div className="flex gap-10 justify-evenly h-full max-w-[1200px] mx-auto max-[640px]:flex-col items-center">
       <div>
         <Image width="275" height="275" src="/images/winter2024/volunteers.png" alt="Volunteers and Lumi" />
         <p className="text-center text-3xl max-w-[180px] mx-auto leading-[1.25] mt-2">62 Total Attendees</p>
