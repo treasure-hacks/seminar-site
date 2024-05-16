@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import './highlights';
 import Splide from "@splidejs/splide";
+import '@splidejs/react-splide/css';
 
 interface Highlight {
   title: string;
