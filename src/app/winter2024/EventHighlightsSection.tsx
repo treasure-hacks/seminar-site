@@ -26,7 +26,7 @@ const highlights: Highlight[] = [
   },
   {
     title: 'Make it a Game!',
-    description: 'For both networking and presented, we designed games and activities that allowed participants to practice and develop ' +
+    description: 'For both networking and presenting, we designed games and activities that allowed participants to practice and develop ' +
       'these skills in a fun way. They learned new skills and significantly improved at breaking the ice with industry professionals.',
     images: [
       ['game1.webp', 'Musical Tables Networking'],
