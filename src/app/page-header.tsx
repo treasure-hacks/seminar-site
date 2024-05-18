@@ -28,7 +28,7 @@ export function PageHeader() {
       </h1>
       <div className='min-[1500px]:scale-125 min-[1500px]:mt-24'>
         <CountdownTimer/>
-        <a target="_blank" href="/register/" className='group relative w-fit mt-16 mx-auto block px-5 py-2.5 bg-gradient-to-r from-[#FFE259] to-[#FFA751]
+        <a href="/winter2024/" className='group relative w-fit mt-16 mx-auto block px-5 py-2.5 bg-gradient-to-r from-[#FFE259] to-[#FFA751]
           rounded-full justify-center items-center font-bold text-xl text-center text-zinc-800 transition-shadow duration-200 select-none
           hover:shadow-[0_0_8px_0px_#6666,4px_4px_4px_2px_#fff4_inset]
           active:shadow-[0_0_8px_0px_#6666,2px_2px_4px_1px_#2224_inset]
@@ -39,7 +39,7 @@ export function PageHeader() {
             <Image width="84" height="84" src='/register-bird-hover.png' alt="Bird"
               className='transition opacity duration-200 opacity-0 group-hover:opacity-100 absolute inset-0'/>
           </div>
-          Register Now
+          View Recap
         </a>
       </div>
     </div>
