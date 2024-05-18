@@ -37,7 +37,7 @@ export default function RootLayout({
         <noscript><link rel="stylesheet" href="/noscript.css" /></noscript>
         {/* eslint-enable @next/next/no-css-tags */}
       </head>
-      <body className={lato.className + ' text-white'}>{children}</body>
+      <body className={lato.className + ' text-white overflow-x-clip'}>{children}</body>
     </html>
   )
 }
